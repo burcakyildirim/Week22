@@ -1,31 +1,5 @@
 const Section2 = () => {
-  /* let btn = document.querySelector(".button-container");
-let features = document.querySelector("#features-container")
-
-
-btn.addEventListener("click", (e) => {
-    features.classList.remove("features-container");
-    void features.offsetWidth;
-    features.classList.add("features-container");
-    switch(e.target.id) {
-        case "yoga":
-            yoga();
-            break;
-        case "group":
-            group();
-            break;
-        case "solo":
-            solo();
-            break;
-        case "stretch":
-            stretch();
-            break;
-        default:
-            return;    
-    }
-});
-
-function yoga() {
+  function yoga() {
     document.querySelectorAll("#features-container h6")[0].innerHTML = "Why Are Your Yoga?";
     document.querySelectorAll("#features-container p")[0].innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nihil recusandae. Atque, illum corporisodio
     pariatur ad harum non, molestias maiores molestiae sapiente perferendis veniam earum fugit ipsum
@@ -70,7 +44,7 @@ function stretch() {
     document.querySelectorAll("#features-container p")[2].innerHTML = `Monday-Tuesday: 8:00am - 10:000am`;
     document.querySelectorAll("#features-container p")[3].innerHTML = `Wednesday-Friday: 8:00am - 10:000am`;
     document.querySelector("#features-container img").src = "img/stret.webp";
-} */
+} 
   return (
     <section className="classes" id="classes">
       <div className="class-container">
@@ -82,10 +56,10 @@ function stretch() {
           Necessitatibus odit aut iste. Amet consectetur adipisicing elit
         </p>
         <div className="button-container">
-          <button id="yoga">Yoga</button>
-          <button id="group">Group</button>
-          <button id="solo">Solo</button>
-          <button id="stretch">Stretching</button>
+          <button id="yoga" onClick={yoga}>Yoga</button>
+          <button id="group" onClick={group}>Group</button>
+          <button id="solo" onClick={solo}>Solo</button>
+          <button id="stretch" onClick={stretch}>Stretching</button>
         </div>
         <div id="features-container">
           <div>
